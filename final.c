@@ -1224,6 +1224,12 @@ void display()
     //  Undo previous transformations
     glLoadIdentity();
 
+    //third person camera
+    // double Ex = -2*dim*Sin(th)*Cos(ph);
+    // double Ey = +2*dim        *Sin(ph);
+    // double Ez = +2*dim*Cos(th)*Cos(ph);
+    // gluLookAt(Ex,Ey,Ez , 0,0,0 , 0,Cos(ph),0);
+
     //first person camera
     //Controls: UP(move up) DOWN(move down) LEFT(rotate left) RIGHT(rotate right)
     //w(move forward) s(move backward)
